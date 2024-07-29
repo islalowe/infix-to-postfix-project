@@ -21,7 +21,7 @@ using std::set;
 // A Function to test if two doubles are "equal"
 bool DoubleEquals(double a, double b, double epsilon = 1e-6);
 void Help(const char* argv);
-enum Flags {INVALID = -1, HARD_CODED, TEST_FILE, EXTRA_CREDIT};
+enum Flags {INVALID = -1, HARD_CODED, TEST_FILE, EVALUATE};
 struct CommandLineParameters{
     string filename;
     Flags flags;
@@ -127,11 +127,11 @@ int main(int argc, char* argv[]) {
         if (error)
             exit(1);
 
-    }else if (clp.flags == EXTRA_CREDIT){
+    }else if (clp.flags == EVALUATE){
         string prefix = clp.filename;
         string inputFilename = prefix + ".input";
         string solutionFilename = prefix + ".output";
-        string evaluateSolutionFilename = prefix + ".extra";
+        string evaluateSolutionFilename = prefix + ".evaluate";
         string jsonFilename = prefix + ".json";
         input = new ifstream(inputFilename);
         solution = new ifstream (solutionFilename);
@@ -257,8 +257,8 @@ CommandLineParameters ProcessCommandLineParameters(int argc, char* argv[]){
         }
         clp.error = !filenameFound;
     }
-    if (parameters.count("-extra") > 0){
-        clp.flags = EXTRA_CREDIT;
+    if (parameters.count("-evaluate") > 0){
+        clp.flags = EVALUATE;
         bool filenameFound = false;
         for (set<string>::iterator it = parameters.begin(); it != parameters.end(); ++it){
             string currentParameter = *it;

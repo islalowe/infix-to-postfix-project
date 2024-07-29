@@ -177,7 +177,6 @@ double Expression::Evaluate(bool& error) const{
 
 /**
  * This method determines the precedence between two operators.
- * , it will return false otherwise.
  * @param operator1 if the first operator is of higher or equal precedence than the
  * second operator, true is returned
  * @param operator2 if the second operator is of higher precedence than the
