@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/infix_to_postfix_project.dir/main.cpp.o CMakeFiles/infix_to_postfix_project.dir/expression.cpp.o -o infix_to_postfix_project 

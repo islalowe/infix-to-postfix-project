@@ -1,0 +1,3 @@
+/tmp/infix-to-postfix-project/cmake-build-debug/CMakeFiles/infix_to_postfix_project.dir
+/tmp/infix-to-postfix-project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/tmp/infix-to-postfix-project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

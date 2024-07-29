@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /tmp/infix-to-postfix-project -B /tmp/infix-to-postfix-project/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/infix-to-postfix-project/cmake-build-debug
